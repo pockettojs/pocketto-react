@@ -2,7 +2,10 @@
   "name": "pocketto-react",
   "version": "1.0.0",
   "description": "pocketto-react is a plugin that make pocketto real time feature to adapt as react hooks",
-  "main": "index.ts",
+  "main": "dist/node/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "browser": "dist/browser/src/index.js",
+
   "scripts": {
     "compile:type": "tsc --project tsconfig-node.json --declaration --declarationDir dist --emitDeclarationOnly && tsc-alias -p tsconfig-types.json",
     "compile:browser": "tsc --project tsconfig-browser.json && tsc-alias -p tsconfig-browser.json",
@@ -16,7 +19,7 @@
   ],
   "peerDependencies": {
     "pocketto": "^0.1.5",
-    "react": "^16.8.0"
+    "react": ">=16.8.0"
   },
   "author": "Kent Ng <kent.ng201@gmail.com>",
   "license": "ISC",
