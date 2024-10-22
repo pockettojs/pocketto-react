@@ -1,6 +1,6 @@
 {
   "name": "pocketto-react",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "pocketto-react is a plugin that make pocketto real time feature to adapt as react hooks",
   "main": "dist/node/src/index.js",
   "types": "dist/src/index.d.ts",
