@@ -41,7 +41,7 @@ export function useRealtimeList<T extends BaseModel>(type: ModelStatic<T>, confi
         const docChange = async (id: string) => {
             if (!(data instanceof Array)) return;
             const doc = await new type().getClass().query().find(id) as T;
-            const sameModelType = new type().getClass().collectionName === doc.cName;
+            const sameModelType = new type().getClass().collectionName === doc?.cName;
             if (!sameModelType) return;
             setChangedDoc(doc);
         };
